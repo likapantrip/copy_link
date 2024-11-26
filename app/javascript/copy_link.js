@@ -3,7 +3,7 @@ function copy_link (){
   const copyIcon = document.getElementById('copy-icon');
 
   // コピーするリンクを取得
-  const copyLink = document.getElementById('copy-link').innerHTML;
+  const copyLink = document.getElementById('copy-link').innerText;
   
   if(copyIcon){
     copyIcon.addEventListener('click', () => {

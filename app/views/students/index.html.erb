@@ -1,0 +1,20 @@
+<div>生徒一覧</div>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>生徒名</th>
+      <th>年齢</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.id %></td>
+        <td><%= link_to student.name, student_path(student.id) %></td>
+        <td><%= student.age %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot></tfoot>
+</table>

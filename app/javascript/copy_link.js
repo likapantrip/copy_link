@@ -21,8 +21,11 @@ function copy_link (){
             copyMessage.style.display = 'none';
           }, 2000); // メッセージを2秒後に非表示
         }
-      }catch{
-        alert('URLリンクのコピーに失敗しました');
+      }catch(e){
+        // エラーメッセージを取得
+        const errorMessage = e.message
+
+        alert('URLリンクのコピーに失敗しました。'+errorMessage);
       }
     })
   }

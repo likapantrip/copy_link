@@ -25,6 +25,7 @@ function copy_link (){
         // エラーメッセージを取得
         const errorMessage = e.message
 
+        // ポップアップを表示
         alert('URLリンクのコピーに失敗しました。'+errorMessage);
       }
     })
